@@ -63,7 +63,6 @@
 }
 
 .header__image {
-  background-image: url(./images/cafe.png);
   top: 135px;
   right: 20px;
   max-width: 636px;
@@ -145,11 +144,11 @@
 }
 
 .event-info__icon_type_calendar {
-  background-image: url(/images/icon_calendar.svg);
+  background-image: url(../images/icon_calendar.svg);
 }
 
 .event-info__icon_type_pin {
-  background-image: url(/images/icon_pin.svg);
+  background-image: url(../images/icon_pin.svg);
 }
 
 .event-info__text {
@@ -181,7 +180,6 @@
 }
 
 .events__image {
-  background-image: url(./images/cafe.png);
   max-width: 100%;
 }
 
@@ -249,7 +247,7 @@
   padding-top: 100px;
   padding-bottom: 140px;
   display: block;
-  background-image: url(/images/staff_picks_background.jpg);
+  background-image: url(../images/staff_picks_background.jpg);
   background-position: bottom;
   background-size: cover;
 }
@@ -259,11 +257,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
-  color: #f2f2f2;
-}
-
-.staff__title:hover {
-  color: #1f69c9;
+  color: #fff;
 }
 
 .staff__subtitle {
@@ -272,7 +266,7 @@
   line-height: 30px;
   font-weight: 400;
   margin: 24px 0 0;
-  color: #f2f2f2;
+  color: #fff;
 }
 
 .staff__cards {
@@ -286,6 +280,7 @@
   margin-top: 68px;
   margin-bottom: 0;
   margin-left: 340px;
+  margin: auto;
 }
 
 .card {
@@ -340,31 +335,16 @@
   line-height: 52px;
 }
 
-.membership__title:hover {
-  color: #1f69c9;
-  cursor: pointer;
-}
-
 .membership__steps {
   list-style-type: none;
   margin: 100px 0 0;
   display: flex;
   justify-content: center;
-  flex-basis: 220px;
   gap: 40px;
-}
-
-.membership__steps:hover {
-  color: #1f69c9;
-  cursor: pointer;
 }
 
 .step {
-  display: flex;
   flex-basis: 220px;
-  gap: 40px;
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .step__title {
@@ -449,38 +429,32 @@
   padding-bottom: 60px;
   padding-left: 80px;
   padding-right: 102px;
-  min-height: 224px;
   display: contents;
   height: 344px;
 }
 
 .footer__columns {
+  min-height: 224px;
   flex-direction: row;
   display: flex;
   background-color: inherit;
-  padding-bottom: 60px;
+  padding-top: 60px;
   padding-left: 80px;
 }
 
 .footer__column_content_hours {
   color: #ffffff;
-  padding-bottom: 20px;
   margin-left: 100px;
+  margin-bottom: 20, 16px;
 }
 
 .footer__column_content_social {
   color: #ffffff;
-  padding-bottom: 20px;
+  padding: 16 x 16px;
   margin-right: 102px;
 }
 
 .footer__logo {
-  margin-right: auto;
-  width: 116px;
-  height: 21px;
-}
-
-.logo_image {
   width: 116px;
   height: 21px;
 }
@@ -520,11 +494,9 @@
 
 .footer__copyright {
   color: #fff;
-  position: relative;
   background-color: inherit;
   padding: 0px;
   margin: 0px;
   top: -60px;
   left: 80px;
-  width: 200px;
 }
