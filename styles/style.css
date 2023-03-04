@@ -32,6 +32,7 @@
 
 .nav__links {
   display: flex;
+  align-items: center;
   column-gap: 20px;
   list-style-type: none;
   margin-top: 8px;
@@ -184,7 +185,7 @@
 }
 
 .person {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -273,14 +274,11 @@
   max-width: 760px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
   list-style-type: none;
   padding: 0;
-  margin-top: 68px;
-  margin-bottom: 0;
-  margin-left: 340px;
-  margin: auto;
+  margin: 68px auto 0;
 }
 
 .card {
@@ -363,10 +361,6 @@
 
 .step__description {
   margin: 10px 0 0;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  align-self: flex-start;
   text-align: left;
 }
 
@@ -400,12 +394,13 @@
 }
 
 .about__paragraph {
-  margin: 0;
-  align-items: center;
-  margin-bottom: 32px;
-  display: flex;
   z-index: 2;
   position: relative;
+}
+
+.about__paragraph:last-child {
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .about__circle {
@@ -429,8 +424,6 @@
   padding-bottom: 60px;
   padding-left: 80px;
   padding-right: 102px;
-  display: contents;
-  height: 344px;
 }
 
 .footer__columns {
@@ -438,20 +431,16 @@
   flex-direction: row;
   display: flex;
   background-color: inherit;
-  padding-top: 60px;
-  padding-left: 80px;
 }
 
 .footer__column_content_hours {
   color: #ffffff;
-  margin-left: 100px;
-  margin-bottom: 20, 16px;
+  margin-left: auto;
 }
 
 .footer__column_content_social {
   color: #ffffff;
-  padding: 16 x 16px;
-  margin-right: 102px;
+  margin-left: 100px;
 }
 
 .footer__logo {
@@ -461,6 +450,7 @@
 
 .footer__list {
   list-style-type: none;
+  padding: 0%;
   margin: 0;
 }
 
@@ -496,7 +486,5 @@
   color: #fff;
   background-color: inherit;
   padding: 0px;
-  margin: 0px;
-  top: -60px;
-  left: 80px;
+  margin-top: 108px;
 }
